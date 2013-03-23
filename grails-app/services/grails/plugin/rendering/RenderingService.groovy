@@ -95,7 +95,7 @@ abstract class RenderingService {
 
 	protected setContentDisposition(Map args, HttpServletResponse response) {
 		if (args.filename) {
-			response.setHeader("Content-Disposition", "attachment; filename=\"$args.filename\";")
+			response.setHeader("Content-Disposition", "inline; filename=\"$args.filename\";")
 		}
 	}
 
